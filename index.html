@@ -9,62 +9,62 @@
   </head>
   <body>
     <main>
-      <div>
+      <div id="about-IMC">
         <h1>Calculadora <span>IMC</span></h1>
         <p>
           O IMC é o cálculo que demonstra se o indivíduo está ou não em seu peso
           ideal. Esse cálculo é importante para avaliar os riscos de obesidade e
           encontrar seu peso ideal
         </p>
+        <div>
+          <div id="inputsValue">
+            <label for="">Altura (ex.: 1,70)</label>
+            <input type="number" name="" id="">
+            <label for="">Peso (ex.: 69,2)</label>
+            <input type="number" name="" id="">
+          </div>
+          <div id="">
+            <button type="submit" id="btn-calcular">Calcular</button>
+            <button type="reset" id="btn-limpar">Limpar</button>
+          </div>
+        </div>
+        <div id="resultado">Seu IMC:</div>
       </div>
-      <div>
+      <div id="card-interpretacao">
         <h2>Veja a interpretação do IMC</h2>
-        <table border="1px">
+        <table >
           <tr>
-            <td>IMC</td>
-            <td>Classificação</td>
-            <td>Obesidade (grau)</td>
+            <td><span>IMC</span></td>
+            <td><span>Classificação</span></td>
+            <td><span>Obesidade (grau)</span></td>
           </tr>
-          <tr>
+          <tr id="items-table">
             <td>Menor que 18,5</td>
             <td>Magreza</td>
             <td>0</td>
           </tr>
-          <tr>
+          <tr  id="items-table">
             <td>Entre 18,5 e 24,9</td>
             <td>Normal</td>
             <td>0</td>
           </tr>
-          <tr>
+          <tr  id="items-table">
             <td>Entre 25,0 e 29,9</td>
             <td>Sobrepeso</td>
             <td>I</td>
           </tr>
-          <tr>
+          <tr  id="items-table">
             <td>Entre 30,0 e 39,9</td>
             <td>Obesidade</td>
             <td>II</td>
           </tr>
-          <tr>
+          <tr  id="items-table">
             <td>Maior que 40,0</td>
             <td>Obesidade Grave</td>
             <td>III</td>
           </tr>
         </table>
       </div>
-      <div>
-        <div>
-          <label for="">Altura (ex.: 1,70)</label>
-          <input type="number" name="" id="">
-          <label for="">Peso (ex.: 69,2)</label>
-          <input type="number" name="" id="">
-        </div>
-        <div>
-          <button type="submit">Calcular</button>
-          <button type="reset">Limpar</button>
-        </div>
-      </div>
-      <div>Seu IMC:</div>
     </main>
     <script src="script.js"></script>
   </body>
