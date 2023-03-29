@@ -16,22 +16,24 @@
           ideal. Esse cálculo é importante para avaliar os riscos de obesidade e
           encontrar seu peso ideal
         </p>
-        <div>
+        <div class="card-inputs">
           <div id="inputsValue">
-            <label for="">Altura </label>
-            <input type="number" id="altura" name="altura" min="0.5" max="3.0" step="0.01">
-            <label for="">Peso </label>
-            <input type="number" id="peso" name="peso" min="1" max="300">
+            <input type="number" id="altura" class="entrada" name="altura" min="0.5" max="3.0" step="0.01" placeholder="Digite sua altura...">
+            <input type="number" id="peso" class="entrada" name="peso" min="1" max="300" placeholder="Digite seu peso...">
           </div>
           <div id="">
             <button type="submit" id="btnCalcular" onclick="calcular()">Calcular</button>
-            <button type="reset" id="btn-limpar">Limpar</button>
+            <button type="reset" id="btnLimpar"  name="b2" onclick="limpar()" >Limpar </button>
+           
           </div>
         </div>
-        <div>Seu IMC: <p id="res"></p></div>
+        <div> <p id="res">
+          <div id="imgdoctor"></div></div>
+        </p>
+       
       </div>
       <div id="card-interpretacao">
-        <img src="https://img.freepik.com/vetores-gratis/mulher-plana-na-dieta-controla-o-peso-normal-com-escala-de-imc_88138-933.jpg?w=900&t=st=1679997254~exp=1679997854~hmac=ac767376273175bfd4ab3d4c53fa1ad364689b6d8d8702a52c71bb4e5ff62e2e" width="400px" alt="" srcset="">
+        <img src="https://img.freepik.com/vetores-gratis/mulher-plana-na-dieta-controla-o-peso-normal-com-escala-de-imc_88138-933.jpg?w=900&t=st=1679997254~exp=1679997854~hmac=ac767376273175bfd4ab3d4c53fa1ad364689b6d8d8702a52c71bb4e5ff62e2e" width="300px" alt="" srcset="">
         <h2>Veja a interpretação do IMC</h2>
         <table >
           <tr>
